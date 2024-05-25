@@ -1,7 +1,12 @@
-export default function TopBar() {
+import { Link } from "react-router-dom";
+
+type Topbar = {
+  className?: string;
+};
+export default function TopBar(props: Topbar) {
   return (
     <div>
-      <div className="navbar justify-between bg-transparent">
+      <div className={`navbar justify-between bg-transparent ${props.className}`}>
         <div className="flex container mx-auto">
           <a className="btn btn-ghost text-3xl relative">
             <span className="text-purple-200">Inertia</span>
@@ -10,24 +15,24 @@ export default function TopBar() {
           </a>
           <ul className="ms-20 hidden lg:flex gap-5 ">
             <li>
-              <a className="text-red-500" href="">
+              <Link className="text-red-500" to={"/"}>
                 Beranda
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="text-white" href="">
+              <Link to={"/layanan-perbaikan"} className="text-white">
                 Layanan Perbaikan
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="text-white" href="">
+              <Link to={"/tentang-kami"} className="text-white">
                 Tentang Kami
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="text-white" href="">
+              <Link to={"/kontak"} className="text-white">
                 Kontak
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

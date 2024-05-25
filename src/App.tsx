@@ -1,14 +1,10 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home";
 import "leaflet/dist/leaflet.css";
-import aos from "aos";
-import { useEffect } from "react";
+import NotFound from "./Pages/NotFound";
 
 export default function App() {
-  const routers = createBrowserRouter([{ path: "/", element: <Home /> }]);
-  useEffect(() => {
-    aos.init();
-  }, []);
+  const routers = createBrowserRouter([{ path: "/", element: <Home />, errorElement: <NotFound /> }]);
 
   return (
     <>
