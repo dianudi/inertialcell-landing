@@ -12,7 +12,8 @@ export default function Home() {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Inertia Cell | Service Handphone Terbaik</title>
+          <title>Service Handphone Terbaik | Inertia Cell</title>
+          <meta name="description" content="Service Handphone Terbaik | Inertia Cell" />
         </Helmet>
       </HelmetProvider>
       <Particle />

@@ -1,7 +1,7 @@
 export default function ChooseMeSection() {
   return (
     <div className="container mx-auto px-4">
-      <h2 className="text-center text-4xl font-bold text-indigo-100 ">Mengapa Harus Kami</h2>
+      <h2 className="text-center text-4xl font-bold text-white ">Mengapa Harus Kami</h2>
       <div className="flex flex-wrap lg:flex-row justify-center  gap-5 my-5">
         <div className="card w-96 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 text-primary-content">
           <div className="card-body">

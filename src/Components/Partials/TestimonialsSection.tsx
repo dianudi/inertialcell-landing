@@ -1,7 +1,7 @@
 export default function TestimonialsSection() {
   return (
     <div className="lg:container mx-auto px-1">
-      <h2 className="text-center text-indigo-100 text-4xl font-bold mb-2">Testimoni</h2>
+      <h2 className="text-center text-white text-4xl font-bold mb-2">Testimoni</h2>
       <div className="grid grid-flow-col overflow-x-auto gap-x-4">
         <div className="card w-72 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 text-primary-content shadow-xl">
           <div className="card-body">
