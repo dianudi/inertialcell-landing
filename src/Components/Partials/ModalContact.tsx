@@ -14,19 +14,19 @@ export default function ModalContact() {
           <li className="mb-2">
             <i className="bi bi-telegram text-2xl align-middle me-2"></i>
             <a href="https://t.me/" className="align-middle text-lg underline">
-              InertialCell
+              Inertia Cell
             </a>
           </li>
           <li className="mb-2">
             <i className="bi bi-facebook text-2xl align-middle me-2"></i>
             <a href="https://facebook.com/" className="align-middle text-lg underline">
-              InertialCell
+              Inertia Cell
             </a>
           </li>
           <li className="mb-2">
             <i className="bi bi-instagram text-2xl align-middle me-2"></i>
             <a href="https://instagram.com" className="align-middle text-lg underline">
-              @inertialcell
+              @inertiacell
             </a>
           </li>
           <li>
