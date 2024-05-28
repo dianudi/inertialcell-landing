@@ -5,6 +5,7 @@ import NotFound from "./Pages/NotFound";
 import Contact from "./Pages/Contact";
 import AboutUs from "./Pages/AboutUs";
 import Gallery from "./Pages/Gallery";
+import RepairServices from "./Pages/RepairServices";
 
 export default function App() {
   const routers = createBrowserRouter([
@@ -12,6 +13,7 @@ export default function App() {
     { path: "/kontak", element: <Contact /> },
     { path: "/tentang-kami", element: <AboutUs /> },
     { path: "/galeri", element: <Gallery /> },
+    { path: "/layanan-perbaikan", element: <RepairServices /> },
   ]);
 
   return (

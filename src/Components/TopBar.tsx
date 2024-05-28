@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 type Topbar = {
   className?: string;
@@ -10,36 +10,36 @@ export default function TopBar(props: Topbar) {
     <div>
       <nav className={`navbar justify-between ${props.className}`}>
         <div className="flex container mx-auto">
-          <Link to={"/"} className="btn btn-ghost text-3xl relative">
+          <NavLink to={"/"} className="btn btn-ghost text-3xl relative">
             <span className="text-white">Inertia</span>
             <span className="text-pink-600">Cell</span>
             <i className="bi bi-tools text-lg animate-pulse text-red-500 absolute top-0 -right-1"></i>
-          </Link>
+          </NavLink>
           <ul className="ms-20 hidden lg:flex gap-5 ">
             <li>
-              <Link className="text-red-500" to={"/"}>
+              <NavLink className={({ isActive }) => (isActive ? "text-red-500" : "text-white")} to={"/"}>
                 Beranda
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to={"/layanan-perbaikan"} className="text-white">
+              <NavLink to={"/layanan-perbaikan"} className={({ isActive }) => (isActive ? "text-red-500" : "text-white")}>
                 Layanan Perbaikan
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to={"/galeri"} className="text-white">
+              <NavLink to={"/galeri"} className={({ isActive }) => (isActive ? "text-red-500" : "text-white")}>
                 Galeri
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to={"/tentang-kami"} className="text-white">
+              <NavLink to={"/tentang-kami"} className={({ isActive }) => (isActive ? "text-red-500" : "text-white")}>
                 Tentang Kami
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to={"/kontak"} className="text-white">
+              <NavLink to={"/kontak"} className={({ isActive }) => (isActive ? "text-red-500" : "text-white")}>
                 Kontak
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -54,29 +54,29 @@ export default function TopBar(props: Topbar) {
       <div className={`transition-all duration-500 bg-indigo-800 py-4 ${menuClicked ? "" : "hidden"} px-2 md:hidden`}>
         <ul className="flex flex-col gap-2">
           <li>
-            <Link className="text-red-500" to={"/"}>
+            <NavLink className="text-red-500" to={"/"}>
               Beranda
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to={"/layanan-perbaikan"} className="text-white">
+            <NavLink to={"/layanan-perbaikan"} className={({ isActive }) => (isActive ? "text-red-500" : "text-white")}>
               Layanan Perbaikan
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to={"/galeri"} className="text-white">
+            <NavLink to={"/galeri"} className={({ isActive }) => (isActive ? "text-red-500" : "text-white")}>
               Galeri
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to={"/tentang-kami"} className="text-white">
+            <NavLink to={"/tentang-kami"} className={({ isActive }) => (isActive ? "text-red-500" : "text-white")}>
               Tentang Kami
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to={"/kontak"} className="text-white">
+            <NavLink to={"/kontak"} className={({ isActive }) => (isActive ? "text-red-500" : "text-white")}>
               Kontak
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>

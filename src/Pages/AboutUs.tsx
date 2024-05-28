@@ -37,9 +37,7 @@ export default function AboutUs() {
             minima expedita ab fugiat ratione, distinctio cupiditate voluptatem ipsam!
           </p>
         </div>
-        <div className="container mx-auto my-3 text-white px-2 clear-left">
-          <h2 className="text-2xl font-bold text-center">Visi Misi</h2>
-        </div>
+        <div className="container mx-auto my-3 text-white px-2 clear-left"></div>
         <Footer />
       </HelmetProvider>
     </>
